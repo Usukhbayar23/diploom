@@ -85,11 +85,9 @@ export default function Game() {
 
   var correctLetters = 0,
     wrongLetters = 0;
-  // const [activeWordIndex, setActiveWordIndex] = useState(0);
   const willBeTyped =
-    "Айвал бүү хий, Хийвэл бүү ай.";
+    "Айвал бүү хий, Хийвэл бүү ай.  ";
   const letters = useRef("");
-
   useEffect(() => {
     letters.current = typedWord?.split("").map((letter, index) => {
       if (letter === willBeTyped[index]) {
@@ -297,6 +295,7 @@ export default function Game() {
       isClosable: true,
       variant: "left-accent",
       position: "top-right",
+      
     });
   };
 
@@ -577,6 +576,7 @@ export default function Game() {
                     <Tr>
                       <Th>№</Th>
                       <Th>Насны ангилал</Th>
+                     
                     </Tr>
                   </Thead>
                   <Tbody>

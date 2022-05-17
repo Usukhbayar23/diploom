@@ -131,24 +131,29 @@ export default function AdminDashboard() {
                     <Tr>
                       <Th>№</Th>
                       <Th>Насны ангилал</Th>
+                      <Th>Онооны интервал </Th>
                     </Tr>
                   </Thead>
                   <Tbody>
                     <Tr>
                       <Td>1</Td>
                       <Td>0-12</Td>
+                      <Td>0-25</Td>
                     </Tr>
                     <Tr>
                       <Td>2</Td>
                       <Td>12-30</Td>
+                      <Td>25-50</Td>
                     </Tr>
                     <Tr>
                       <Td>3</Td>
                       <Td>30-60</Td>
+                      <Td>50-75</Td>
                     </Tr>
                     <Tr>
                       <Td>4</Td>
                       <Td>60+</Td>
+                      <Td>75+</Td>
                     </Tr>
                   </Tbody>
                 </Table>
