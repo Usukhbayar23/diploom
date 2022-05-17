@@ -240,18 +240,24 @@ export default function Game() {
     }
     var final4;
     if (op === 1) {
-      final4 = 25;
-    } else if (op === 2) {
-      final4 = 50;
-    } else if (op === 3) {
-      final4 = 75;
-    } else if (op === 4) {
       final4 = 100;
+    } else if (op === 2) {
+      final4 = 75;
+    } else if (op === 3) {
+      final4 = 50;
+    } else if (op === 4) {
+      final4 = 25;
     }
 
     const final5 = Math.floor((time / 1000) % 60);
 
-    const final = (final1 + final2 + final3 + final4 + final5) / 5;//------------------------------
+    const final = (
+      final1 * 0.2 + 
+      final2 * 0.1 + 
+      final3 * 0.1 + 
+      final4 * 0.35 + 
+      final5 * 0.25 
+      )  ;//Эцсийн үр дүн
 
     console.log(final, final1, final2, final3, final4, final5, finalAge);
 
@@ -532,9 +538,9 @@ export default function Game() {
         {stage === 5 && (
           <Box textAlign="center" w={{ base: "100%", md: "70%" }}>
             <Text fontSize="xl" fontWeight="bold" mb="10">
-              Доорх дүрсийг эвлүүлнэ үү:{" "}
+              Доорх дүрсийг тоон дарааллын дагуу эвлүүлнэ үү:{" "}
               <Text
-                color={puzzleFinished ? "green.500" : "black"}
+                color={puzzleFinished ? "green.500"  : "black"}
                 fontSize={puzzleFinished ? "4xl" : "lg"}
               >
                 {Math.floor((time / 1000) % 60)}
@@ -543,7 +549,7 @@ export default function Game() {
 
             <Box h="100%" w="100%" border="2px" borderColor="green">
               <JigsawPuzzle
-                imageSrc="https://images.pexels.com/photos/19677/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19677.jpg&fm=jpg"
+                imageSrc="https://www.printablee.com/postpic/2014/12/printable-number-cards-1-9_233898.jpg"
                 rows={3}
                 columns={3}
                 onSolved={() => {
