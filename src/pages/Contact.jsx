@@ -16,6 +16,7 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
+  useColorModeValue
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -29,6 +30,10 @@ import React from "react";
 import { Layout } from "../components/Layout";
 
 export default function Contact() {
+
+  const bg = useColorModeValue('red.500', 'red.200')
+  const textColor = useColorModeValue('gray.800', 'white')
+  
   return (
     <Layout>
       <Box display="flex" alignItems="center" justifyContent="center">
@@ -44,7 +49,7 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }} w="100%">
               <WrapItem>
                 <Box textAlign="center">
-                  <Heading>Холбогдох</Heading>
+                  <Heading color={textColor}>Холбогдох</Heading>
 
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3}>
@@ -56,7 +61,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdPhone color="green.500" size="20px" />}
                       >
-                        99119999
+                        88996613
                       </Button>
                       <Button
                         size="md"
@@ -66,7 +71,7 @@ export default function Contact() {
                         _hover={{ border: "2px solid #1C6FEB" }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}
                       >
-                        hello@abc.com
+                        d.usukhbayar2330@gmail.com
                       </Button>
                       <Button
                         size="md"
@@ -115,7 +120,7 @@ export default function Contact() {
               </WrapItem>
               <WrapItem>
                 <Box>
-                  <Box m={8} color="black">
+                  <Box m={8} color={textColor}>
                     <VStack spacing={5}>
                       <FormControl id="name">
                         <FormLabel>Нэр</FormLabel>

@@ -87,7 +87,7 @@ export default function Game() {
     wrongLetters = 0;
   // const [activeWordIndex, setActiveWordIndex] = useState(0);
   const willBeTyped =
-    "Амжилтанд хүрсэн хүн бүрт сайн төлөвлөгөө, хүч хөдөлмөр байдал бол амжилтгүй хүн бүрт хэлэх нэг шалтгаан заавал байдаг байна";
+    "Боломжгүй зүйл гэж үгүй";
   const letters = useRef("");
 
   useEffect(() => {
@@ -353,7 +353,7 @@ export default function Game() {
         {stage === 1 && (
           <Box>
             <Text fontSize="xl" fontWeight="bold" mb="10">
-              Та доор үсгийн хэмжээнээс өөрт тохирох хэмжээг тааруулна уу
+            Та доорх үсгийн хэмжээнээс өөрийн харж чадах хамгийн бага хэмжээ дээр тааруулна уу
             </Text>
             <Box w="100%" display="flex">
               <Box flex="1">
@@ -380,7 +380,7 @@ export default function Game() {
                   borderRadius="10"
                 >
                   <Text p="4">
-                    Таний сонгосон үсгийн хэмжээ ингэж харагдаж байна .
+                    Таны сонгосон үсгийн хэмжээ ингэж харагдаж байна .
                   </Text>
                 </Box>
               </Box>
@@ -456,7 +456,7 @@ export default function Game() {
               {color && (
                 <Box>
                   <Text fontSize="xl" fontWeight="light" mt="4">
-                    Таний сонгосон өнгө:{" "}
+                    Таны сонгосон өнгө:{" "}
                   </Text>
                   <Box w="100%" h="20vh" bg={color}></Box>
                 </Box>
@@ -468,7 +468,7 @@ export default function Game() {
         {stage === 4 && (
           <Box>
             <Text fontSize="xl" fontWeight="bold" mb="10">
-              Доорх интерфэйсээс ашиглахад тохиромжтой гэж бодсон интерфэйсийг
+              Доорх интерфейсээс ашиглахад тохиромжтой гэж бодсон интерфейсийг
               сонгоно уу?
             </Text>
             <Grid
@@ -543,7 +543,7 @@ export default function Game() {
 
             <Box h="100%" w="100%" border="2px" borderColor="green">
               <JigsawPuzzle
-                imageSrc="https://img.freepik.com/free-photo/flag-mongolia-3d-illustration-mongolian-flag-waving_2227-2203.jpg"
+                imageSrc="https://images.pexels.com/photos/19677/pexels-photo.jpg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-19677.jpg&fm=jpg"
                 rows={3}
                 columns={3}
                 onSolved={() => {
@@ -596,7 +596,7 @@ export default function Game() {
               <Box flex="1">
                 {final >= 0 && final <= 25 && (
                   <Text fontSize="2xl" fontWeight="bold">
-                    Таны интерфэйсийн нас:{" "}
+                    Таны интерфейсийн нас:{" "}
                     <Text color="green.500" display="inline">
                       0-12
                     </Text>
@@ -604,7 +604,7 @@ export default function Game() {
                 )}
                 {final > 25 && final <= 50 && (
                   <Text fontSize="2xl" fontWeight="bold">
-                    Таны интерфэйсийн нас:{" "}
+                    Таны интерфейсийн нас:{" "}
                     <Text color="green.500" display="inline">
                       12-30
                     </Text>
@@ -612,7 +612,7 @@ export default function Game() {
                 )}
                 {final > 50 && final <= 75 && (
                   <Text fontSize="2xl" fontWeight="bold">
-                    Таны интерфэйсийн нас:{" "}
+                    Таны интерфейсийн нас:{" "}
                     <Text display="inline" color="green.500">
                       30-60
                     </Text>
@@ -620,7 +620,7 @@ export default function Game() {
                 )}
                 {final > 75 && (
                   <Text fontSize="2xl" fontWeight="bold">
-                    Таны интерфэйсийн нас:{" "}
+                    Таны интерфейсийн нас:{" "}
                     <Text display="inline" color="green.500">
                       60+
                     </Text>

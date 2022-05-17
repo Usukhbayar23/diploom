@@ -6,19 +6,17 @@ export default function About() {
   return (
     <Layout>
       <Box>
-        <Text fontSize="2xl" fontWeight="bold" mt="10">
+        <Text fontSize="3xl" fontWeight="bold" mt="10">
           Бидний тухай
         </Text>
-        <Text mt="10" fontWeight="light">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+        <Text mt="30" fontWeight="light" fontSize={"2xl"}>
+        Мэдээллийн технологи хөтөлбөрийн 4 - р түвшний оюутан Дашням овогтой Өсөхбаяр
+миний бие Бакалаврын судалгааны ажлын төлөвлөгөөний дагуу өөрийн сонгож авсан ” User’s age level classification based on their actions
+буюу Хэрэглэгчийн интерфейстэй харилцах үйлдлээс хэрэглэгчийн насыг тодорхойлох веб
+” ийг 15 долоо хоногийн хугацаанд хийн гүйцэтгэж байгаа бөгөөд энэ хугацаандаа сонгосон
+сэдвийнхээ талаарх судалгаа , адил төстэй систем , ашиглагдах технологи ,зохиомж гэх мэт
+бүхий л үйл ажиллагааг эхнээс нь хийн гүйцэтгэж байна.
+
         </Text>
       </Box>
     </Layout>
