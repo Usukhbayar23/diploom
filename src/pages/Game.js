@@ -87,7 +87,7 @@ export default function Game() {
     wrongLetters = 0;
   // const [activeWordIndex, setActiveWordIndex] = useState(0);
   const willBeTyped =
-    "Боломжгүй зүйл гэж үгүй";
+    "Айвал бүү хий, Хийвэл бүү ай.";
   const letters = useRef("");
 
   useEffect(() => {
@@ -398,7 +398,7 @@ export default function Game() {
           <Box>
             <Box display="flex" flexDir="column" alignItems="center">
               <Text Text fontSize="xl" fontWeight="bold" mb="5">
-                Энэхүү өгүүлбэрийг хамгийн хурданаараа бичнэ үү?
+                Энэхүү өгүүлбэрийг алдаагүй зөв бичнэ үү?
               </Text>
               <Box display="flex">
                 <Box
@@ -662,7 +662,7 @@ export default function Game() {
                 stage === 2 && handlePauseResume2();
               }}
             >
-              Дараагын үе
+              Дараагийн үе
             </Button>
           )}
 
