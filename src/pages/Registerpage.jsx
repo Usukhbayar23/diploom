@@ -51,7 +51,7 @@ export default function Registerpage() {
               });
               return;
             }
-            // your register logic here
+            // my register logic here
             setIsSubmitting(true);
             register(email, password)
               .then((res) => {})

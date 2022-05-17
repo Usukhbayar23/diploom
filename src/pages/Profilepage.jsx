@@ -120,8 +120,7 @@ export default function Profilepage() {
             {currentUser?.email}
           </Text>
         </Text>
-        {(currentUser?.email === "d.usukhbayar2330@gmail.com" ||
-          currentUser?.email === "zagig35@gmail.com") && (
+        {(currentUser?.email === "d.usukhbayar2330@gmail.com") && (
           <Link to="/admin">
             <Button m="2">Админ панел</Button>
           </Link>

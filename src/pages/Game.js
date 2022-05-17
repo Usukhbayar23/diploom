@@ -251,7 +251,7 @@ export default function Game() {
 
     const final5 = Math.floor((time / 1000) % 60);
 
-    const final = (final1 + final2 + final3 + final4 + final5) / 5;
+    const final = (final1 + final2 + final3 + final4 + final5) / 5;//------------------------------
 
     console.log(final, final1, final2, final3, final4, final5, finalAge);
 
